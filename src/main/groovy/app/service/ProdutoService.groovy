@@ -1,7 +1,7 @@
 package app.service
 
 import app.model.Produto
-import app.rest.ProdutoRest
+import app.rest.ProdutoRepositoryRest
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
@@ -19,7 +19,7 @@ class ProdutoService {
 
 
     @Autowired
-    ProdutoRest dao;
+    ProdutoRepositoryRest dao;
 
 
     @PostConstruct
