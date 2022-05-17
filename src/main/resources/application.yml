@@ -1,0 +1,42 @@
+
+
+spring:
+
+  #profiles:
+    #active: @activedProfile@
+
+  application:
+    name: "Spring DataRest com Groove"
+
+  jackson:
+    time-zone: Brazil/East
+    locale: pt_BR
+    #date-format: yyyy-MM-dd
+    #serialization:
+      #write-dates-as-timestamps: false
+
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost/spring-data-rest
+    username: admin
+    password: 123456
+
+  jpa:
+    open-in-view: false
+    show-sql: true
+    generate-ddl: false
+
+    hibernate:
+      ddl-auto: update
+
+    properties:
+      hibernate:
+        format_sql: true
+      #dialect: org.hibernate.dialect.PostgreSQL95Dialect
+
+  #security:
+    #filter:
+      #order: 0
+
+
