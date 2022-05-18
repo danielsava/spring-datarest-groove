@@ -1,11 +1,12 @@
 package app.model
 
 import estrutura.model.jpa.EntidadeJPA
+import groovy.transform.builder.Builder
 
 import javax.persistence.Entity
 import java.time.LocalDate
 
-@Entity
+@Entity @Builder(builderMethodName = "of")
 class Produto extends EntidadeJPA {
 
 
@@ -16,27 +17,6 @@ class Produto extends EntidadeJPA {
     LocalDate dataInicio
 
     Boolean ativo
-
-
-    static Produto of() {
-        return new Produto()
-    }
-
-
-    Produto nome(String nome) {
-        this.nome = nome
-        return this
-    }
-
-    Produto dataInicio(LocalDate dataInicio) {
-        this.dataInicio = dataInicio
-        return this
-    }
-
-    Produto ativo(boolean ativo) {
-        this.ativo = ativo
-        return this
-    }
 
 
 }
