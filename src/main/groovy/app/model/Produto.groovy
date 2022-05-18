@@ -1,19 +1,13 @@
 package app.model
 
+import estrutura.model.jpa.EntidadeJPA
 
 import javax.persistence.Entity
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
 import java.time.LocalDate
-import java.time.LocalDateTime
 
 @Entity
-class Produto {
+class Produto extends EntidadeJPA {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id
 
     String nome
 
@@ -23,11 +17,6 @@ class Produto {
 
     Boolean ativo
 
-    LocalDateTime createAt
-
-    Produto() {
-        createAt = LocalDateTime.now()
-    }
 
     static Produto of() {
         return new Produto()
@@ -49,21 +38,5 @@ class Produto {
         return this
     }
 
-
-    boolean equals(o) {
-
-        if (this.is(o)) return true
-        if (getClass() != o.class) return false
-
-        Produto produto = (Produto) o
-
-        if (id != produto.id) return false
-
-        return true
-    }
-
-    int hashCode() {
-        return (id != null ? id.hashCode() : 0)
-    }
 
 }

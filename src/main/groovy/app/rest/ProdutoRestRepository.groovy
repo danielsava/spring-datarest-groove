@@ -12,7 +12,7 @@ import org.springframework.format.annotation.DateTimeFormat
 import java.time.LocalDate
 
 @RepositoryRestResource(collectionResourceRel = "produtos", path = "produtos")
-interface ProdutoRepositoryRest extends PagingAndSortingRepository<Produto, Long> {
+interface ProdutoRestRepository extends PagingAndSortingRepository<Produto, Long> {
 
 
     Optional<Produto> findById(Long id)
