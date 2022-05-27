@@ -21,7 +21,7 @@ class ProdutoService {
 
     @PostConstruct
     private void init() {
-        inserir()
+        //inserir()
         consultar()
     }
 
