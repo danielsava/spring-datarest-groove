@@ -1,7 +1,7 @@
 package app.service
 
 import app.model.Produto
-import app.rest.ProdutoRestRepository
+import app.repository.ProdutoRepository
 import groovy.util.logging.Slf4j
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
@@ -16,7 +16,7 @@ class ProdutoService {
 
 
     @Autowired
-    ProdutoRestRepository dao;
+    ProdutoRepository dao;
 
 
     @PostConstruct

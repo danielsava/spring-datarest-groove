@@ -6,12 +6,12 @@ import groovy.transform.builder.Builder
 import javax.persistence.Entity
 
 @Entity @Builder(builderMethodName = "of")
-class Carro extends EntidadeJPA {
+class Funcionalidade extends EntidadeJPA {
 
-    String marca
 
-    String modelo
+    String nome
 
-    Integer ano
+    String descricao
+
 
 }

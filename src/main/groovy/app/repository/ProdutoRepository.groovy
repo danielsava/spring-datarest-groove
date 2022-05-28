@@ -1,4 +1,4 @@
-package app.rest
+package app.repository
 
 import app.model.Produto
 import org.springframework.data.domain.Page
@@ -11,8 +11,8 @@ import org.springframework.format.annotation.DateTimeFormat
 
 import java.time.LocalDate
 
-@RepositoryRestResource(collectionResourceRel = "produtos", path = "produtos")
-interface ProdutoRestRepository extends PagingAndSortingRepository<Produto, Long> {
+@RepositoryRestResource(path = "produto", collectionResourceRel = "produtos")
+interface ProdutoRepository extends PagingAndSortingRepository<Produto, Long> {
 
 
     Optional<Produto> findById(Long id)

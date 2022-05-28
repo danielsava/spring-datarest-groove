@@ -15,6 +15,10 @@ spring:
     #serialization:
       #write-dates-as-timestamps: false
 
+  data:
+    rest:
+      base-path: "/api"
+      # return-body-on-update: false
 
   datasource:
     driver-class-name: org.postgresql.Driver
