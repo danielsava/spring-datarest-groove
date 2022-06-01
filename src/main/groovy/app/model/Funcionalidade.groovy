@@ -11,7 +11,7 @@ import javax.validation.constraints.Min
 import javax.validation.constraints.NotBlank
 
 @Entity @Builder(builderMethodName = "of")
-@GroupSequence([Funcionalidade, SecondOrder ])
+@GroupSequence([ Funcionalidade, SecondOrder ])
 class Funcionalidade extends EntidadeJPA {
 
 
