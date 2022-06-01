@@ -1,19 +1,25 @@
 package app.model
 
+
+import app.model.validation.SecondOrder
 import estrutura.model.jpa.EntidadeJPA
 import groovy.transform.builder.Builder
 
 import javax.persistence.Entity
-import javax.validation.constraints.NotEmpty
+import javax.validation.GroupSequence
+import javax.validation.constraints.Min
+import javax.validation.constraints.NotBlank
 
 @Entity @Builder(builderMethodName = "of")
+@GroupSequence([Funcionalidade, SecondOrder ])
 class Funcionalidade extends EntidadeJPA {
 
 
-    @NotEmpty(message = "Informe o nome")
+    @NotBlank(message = "Informe o nome")
     String nome
 
-    @NotEmpty(message = "Informe a descrição")
+    @Min(value = 2L, message = "Descrição muito curta", groups = SecondOrder)
+    @NotBlank(message = "Informe a descrição")
     String descricao
 
 
