@@ -22,4 +22,13 @@ class Funcionalidade extends EntidadeJPA {
     String descricao
 
 
+
+    void setNome(String nome) {
+        this.nome = nome.trim()
+    }
+
+    void setDescricao(String descricao) {
+        this.descricao = descricao.trim()
+    }
+
 }
