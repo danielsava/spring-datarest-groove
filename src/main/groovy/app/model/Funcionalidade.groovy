@@ -21,14 +21,4 @@ class Funcionalidade extends EntidadeJPA {
     @NotBlank(message = "Informe a descrição")
     String descricao
 
-
-
-    void setNome(String nome) {
-        this.nome = nome.trim()
-    }
-
-    void setDescricao(String descricao) {
-        this.descricao = descricao.trim()
-    }
-
 }
