@@ -12,6 +12,9 @@ class Config implements RepositoryRestConfigurer {
     @Override
     void configureRepositoryRestConfiguration(RepositoryRestConfiguration config, CorsRegistry cors) {
 
-        cors.addMapping("/**")
+        cors
+            .addMapping("/**")
+            .allowedMethods("*")
+            //.allowedOrigins("*")
     }
 }
