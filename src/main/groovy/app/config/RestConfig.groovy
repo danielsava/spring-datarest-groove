@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component
 import org.springframework.web.servlet.config.annotation.CorsRegistry
 
 @Component
-class Config implements RepositoryRestConfigurer {
+class RestConfig implements RepositoryRestConfigurer {
 
 
     @Override
