@@ -6,12 +6,12 @@ import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer
 import org.springframework.stereotype.Component
 import org.springframework.web.servlet.config.annotation.CorsRegistry
 
+
 @Component
 class RestConfig implements RepositoryRestConfigurer {
 
-
-
     // Comentario branch teste
+    // Comentário teste
 
     @Override
     void configureRepositoryRestConfiguration(RepositoryRestConfiguration config, CorsRegistry cors) {
@@ -25,4 +25,5 @@ class RestConfig implements RepositoryRestConfigurer {
             .allowedMethods("*")
             //.allowedOrigins("*")
     }
+    
 }
