@@ -18,7 +18,12 @@ class Funcionalidade extends EntidadeJPA {
     String nome
 
     @Size(min = 4, message = "Descrição muito curta", groups = SecondOrder)
-    @NotBlank(message = "Informe a descrição")
+    @NotBlank(message = "Informe a descrição teste")
     String descricao
+
+
+    String teste1
+
+    String teste2
 
 }
