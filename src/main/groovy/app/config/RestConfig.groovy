@@ -10,6 +10,9 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry
 class RestConfig implements RepositoryRestConfigurer {
 
 
+
+    // Comentario branch teste
+
     @Override
     void configureRepositoryRestConfiguration(RepositoryRestConfiguration config, CorsRegistry cors) {
 
