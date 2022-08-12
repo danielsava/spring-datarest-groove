@@ -15,6 +15,8 @@ import javax.validation.ConstraintViolationException
 class AppControllerAdvice extends ResponseEntityExceptionHandler {
 
 
+    // comentário teste branch
+
     @ExceptionHandler(ConstraintViolationException)
     protected ResponseEntity<List<?>> beanValidationException(ConstraintViolationException e) {
 

@@ -26,4 +26,8 @@ interface ProdutoRepository extends PagingAndSortingRepository<Produto, Long> {
     @RestResource(path = "ativos", rel = "ativos")
     Page<Produto> findByDataInicioGreaterThanAndAtivo(@DateTimeFormat(iso = DateTimeFormat.ISO.DATE) @Param("desde") LocalDate desde, @Param("ativo") boolean ativo, Pageable pageable)
 
+
+    // comentário teste
+
+
 }

@@ -19,4 +19,12 @@ class Produto extends EntidadeJPA {
     Boolean ativo
 
 
+    //
+    String testeBranch
+
+
+    //
+    String testeBranch2
+
+
 }
