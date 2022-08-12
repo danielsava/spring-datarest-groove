@@ -6,8 +6,13 @@ import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer
 import org.springframework.stereotype.Component
 import org.springframework.web.servlet.config.annotation.CorsRegistry
 
+
 @Component
 class RestConfig implements RepositoryRestConfigurer {
+
+
+
+    // Comentário teste
 
 
     @Override
