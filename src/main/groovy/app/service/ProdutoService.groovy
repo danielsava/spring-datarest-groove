@@ -60,6 +60,10 @@ class ProdutoService {
     }
 
 
+    String teste() {
+
+        return "teste"
+    }
 
 
 }
